@@ -11,7 +11,7 @@ The two finite collectible sets in Portal. Each row is a set-member claim feedin
 
 Routing follows the "NEVER left/right -- anchor to features" rule (`nav/index.md`); descriptions are quoted from the research source and use feature anchors.
 
-_section source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high (counts confirmed across StrategyWiki, Steam community guides, ThePortalWiki) · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg_
+_source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high (counts confirmed across StrategyWiki, Steam community guides, ThePortalWiki) · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg_
 
 ---
 
