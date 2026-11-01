@@ -1,21 +1,29 @@
-# Portal — Hintforge Companion
+# Portal
 
-![Portal companion status — coverage, how current it is, and spoiler control](assets/readme-status-card.svg)
+![Portal companion status: coverage, how current it is, and spoiler control](assets/readme-status-card.svg)
 
-A spoiler-controlled hint companion for **Portal**, Aperture Science's first-person puzzler about a portal gun, a series of test chambers, and a passive-aggressive AI. Built in the [Hintforge](https://github.com/hintforge/builder) format: a loyal sidekick that answers only from these guide files — never from guesswork — at the spoiler level you set.
+A free hint guide for Portal that lets you choose how much to reveal. Ask for help with this first-person puzzle game about a portal gun, test chambers and a passive-aggressive AI. Your AI agent answers only from the guide files.
 
 ## Use it
 
-You need a Hintforge reader running in Claude Code, Codex, or OpenClaw. Point it at this repo:
+Install the [reader](https://github.com/hintforge/reader) in any AI agent that can read files on your computer, then tell it:
 
 > Load the Portal guide from github.com/hintforge/portal
 
-Then just ask — *"how do I solve this chamber," "where do I put the portal," "how do I beat the ending."* Runtime setup lives in [`hintforge/reader`](https://github.com/hintforge/reader).
+Try "how do I solve this chamber", "where do I put the portal" or "how do I beat the ending".
+
+The guide uses the [Hintforge](https://github.com/hintforge/builder) format. The agent reads and writes only files you control.
 
 ## Spoilers
 
-**You** set two independent dials — enemy/threat warnings (Tier 0–5) and puzzle-hint warnings (Tier 0–3) — both **silent by default**; the guide volunteers nothing until you raise one. Puzzle hints come on a request ladder (a light nudge → more → step-by-step), so you can ask for exactly as much as you want. There's no save-state reader, so every answer comes from this guide's files.
+Two independent dials control enemy and threat warnings (Tier 0 to 5) and puzzle hints (Tier 0 to 3). Both start silent. The guide volunteers nothing until you raise one.
+
+Ask for a light nudge, then more help, then a step-by-step walkthrough when you want it. There is no save reader; answers come from the guide files.
 
 ## What's inside
 
-A structured Markdown corpus — every test chamber, the portal/momentum mechanics, puzzle solutions, and all achievements. Interactive tools (a per-chamber technique tracker is the obvious fit) aren't built yet. The companion reads and writes only the files you control.
+- Every test chamber and its puzzle solutions.
+- Portal and momentum mechanics.
+- All achievements.
+
+Interactive tools, including a per-chamber technique tracker, aren't built yet.
