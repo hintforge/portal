@@ -15,7 +15,7 @@ Portal is a physics-based puzzle game. All gameplay derives from one core tool (
 The ASHPD fires two linked portals (blue and orange). Only one of each color exists at a time; firing a new blue portal moves the existing blue one. The player and objects pass through one aperture and exit the other instantaneously.
 
 - **Surface compatibility:** portals attach only to flat, light-colored/concrete-type surfaces. Dark metallic brown/black panels are non-portalable. Glass and moving surfaces reject portals.
-_source: 2026-11-06 https://theportalwiki.com/wiki/Portals · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
+_source: 2026-11-06 https://theportalwiki.com/wiki/Portals · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
 - **Design reason (unverified):** the research says the developer commentary gives the dark colour as a choice so non-portalable surfaces are easy to spot from a distance; no source page read on 2026-11-06 confirms it.
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:handoff]
 - **Crosshair feedback:** the crosshair indicator changes colour when it is over a valid portal-placement surface -- the primary read for spotting portalable surfaces and edge placements. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
@@ -46,8 +46,10 @@ _source: 2026-11-06 https://theportalwiki.com/wiki/Portals · capture: web_fetch
 - **Function:** vaporize unauthorized objects (cubes, turrets, cameras, radios, rockets), block portal shots, and reset the player's active portals on pass-through. The player and the ASHPD pass through unharmed. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 - **Pass vs. dissolve:** the test subject and portal gun pass; cubes, turrets, cameras, radios, and rockets are vaporized (a dissolving turret emits a long "owowowow"). Portals cannot be placed through or across a grill, and portals on the far side are unreachable. High Energy Pellets are destroyed on contact like other objects. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 - **Documented exception:** some square metal maintenance panels are NOT affected by the grill -- a developer oversight. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low [single source] · enemy-tier: 0 · puzzle-tier: 1 · category: easter-egg · spoiler: none_
-- **Naming note:** StrategyWiki calls it the "Material Emancipation Grid" (also "emancipation grills"); GLaDOS says "Grill" in-game.
-_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Gameplay, https://theportalwiki.com/wiki/Material_Emancipation_Grill · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
+- **Naming note:** StrategyWiki calls it the "Material Emancipation Grid" (also "emancipation grills").
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Gameplay · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
+- **Spoken name:** GLaDOS says "Grill" in-game.
+_source: 2026-11-06 https://theportalwiki.com/wiki/Material_Emancipation_Grill · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
 - **Subtitles and Prima guide (unverified):** the research says both use "Grid"; neither was checked on 2026-11-06.
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:handoff]
 
