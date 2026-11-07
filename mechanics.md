@@ -16,7 +16,7 @@ The ASHPD fires two linked portals (blue and orange). Only one of each color exi
 
 - **Surface compatibility:** portals attach only to flat, light-colored/concrete-type surfaces. Dark metallic brown/black panels are non-portalable. Glass and moving surfaces reject portals.
 _source: 2026-11-06 https://theportalwiki.com/wiki/Portals · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
-- **Design reason (unverified):** the research says the developer commentary gives the dark colour as a choice so non-portalable surfaces are easy to spot from a distance; no source page read on 2026-11-06 confirms it.
+- **Design reason (unverified):** the developer commentary reportedly explains the dark colour as a deliberate choice, so non-portalable surfaces are easy to spot from a distance; the major walkthroughs do not mention it.
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:handoff]
 - **Crosshair feedback:** the crosshair indicator changes colour when it is over a valid portal-placement surface -- the primary read for spotting portalable surfaces and edge placements. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 - **Acquisition timing:** Chambers 00-01 have no player gun (automated portals). The blue-only ASHPD is retrieved in **Chamber 02**; the fully powered dual-portal (blue+orange) device is acquired in **Chamber 11** (triggers "Lab Rat"). _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: progression_
@@ -50,7 +50,7 @@ _source: 2026-11-06 https://theportalwiki.com/wiki/Portals · capture: web_fetch
 _source: 2026-11-06 https://strategywiki.org/wiki/Portal/Gameplay · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
 - **Spoken name:** GLaDOS says "Grill" in-game.
 _source: 2026-11-06 https://theportalwiki.com/wiki/Material_Emancipation_Grill · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
-- **Subtitles and Prima guide (unverified):** the research says both use "Grid"; neither was checked on 2026-11-06.
+- **Subtitles and Prima guide (unverified):** both reportedly use "Grid"; this is not confirmed.
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:handoff]
 
 ---
