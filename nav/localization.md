@@ -1,7 +1,7 @@
 # Portal -- Localization Toolkit
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P2 ingested 2026-06-02 (portal_p2.result.md)
 
 Portal uses **`landmark` localization** (no map UI). The persona infers the player's position from what they describe seeing. The single most reliable cue is the **chamber number sign** at each entry antechamber (Aperture displays the chamber number and the featured testing-element icons).
@@ -60,7 +60,8 @@ GLaDOS narrates the device pickup. `[Confirmed: 2]`
 
 ### chamber_04 — Pit Cube & Single Button
 
-1. A single cube dispenser dropping a cube into a pit with a permanent orange portal at the pit floor.
+1. A single cube dispenser dropping a cube into a pit; the permanent orange portal is in the main area near the button.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_04, https://www.thonky.com/portal-walkthrough/test-chamber-04 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 2. **Single floor button** (ONE button/ONE cube). Disambiguation: ONE button/one cube vs. chamber_05's TWO buttons/TWO cubes.
 3. Two cameras (above the button; beside the exit).
 
@@ -82,7 +83,7 @@ GLaDOS: prior no-monitoring claim "was an outright fabrication." `[Confirmed: 2]
 
 1. First appearance of **brown (non-portalable) vs. grey (portalable) wall texturing**.
 2. A **High Energy Pellet launcher + receiver** with a victory lift — the first pellet chamber.
-3. Radio on the launcher; no cameras. Disambiguation: simplest single-pellet→lift layout; chamber_07/08 add moving platforms.
+3. Radio above the launcher; no cameras. Disambiguation: simplest single-pellet→lift layout; chamber_07/08 add moving platforms.
 
 GLaDOS: the pellet "can and has caused permanent disabilities, such as vaporization." `[Confirmed: 2]`
 
@@ -132,7 +133,7 @@ GLaDOS: "speedy thing goes in, speedy thing comes out" / "how a portal affects f
 
 1. The **dual portal gun on a central pedestal** reached by a pellet-powered moving platform.
 2. A **toxic-goo main floor** (GLaDOS warns it "will kill you").
-3. Radio above the entranceway; one camera. Disambiguation: dual-gun acquisition + goo floor (vs. chamber_02's blue-only dry room).
+3. One camera above the entranceway; radio on a ledge near the pellet receiver in the main room. Disambiguation: dual-gun acquisition + goo floor (vs. chamber_02's blue-only dry room).
 
 GLaDOS: device "now more valuable than the organs and combined incomes of everyone in `<subject hometown here>`." `[Confirmed: 2]`
 
@@ -152,7 +153,7 @@ GLaDOS (fragmented): "…fling yourself…need to fling into space…" `[Confirm
 
 1. A **two-step double-button puzzle** (both buttons normally inaccessible) with a pellet-powered platform and a one-dot ceiling symbol.
 2. Three cameras (entranceway; main-room wall; final passage).
-3. Radio in the final passageway. Disambiguation: first post-dual-gun puzzle; first Challenge chamber.
+3. Radio on a ledge in the main room, grabbed from the moving platform. Disambiguation: first post-dual-gun puzzle; first Challenge chamber.
 
 GLaDOS: "this next test could take a very, very long time." `[Confirmed: 2]`
 
@@ -162,7 +163,7 @@ GLaDOS: "this next test could take a very, very long time." `[Confirmed: 2]`
 
 1. **Rising/retracting stairs** and a raised cube platform requiring a fling.
 2. A **sludge room with platforms that rise and sink**, plus a pellet launcher antechamber and a long around-corners pellet route.
-3. Radio on the first-room extended-platform support; no cameras. Disambiguation: rising-then-retracting stairs + long pellet routing.
+3. Radio on a ledge on the right of the first room; no cameras. Disambiguation: rising-then-retracting stairs + long pellet routing.
 
 GLaDOS: "A complimentary victory lift has been activated." `[Confirmed: 2]`
 
@@ -201,7 +202,7 @@ GLaDOS: "The vital apparatus vent will deliver a weighted companion cube in 3…
 ### chamber_18 — Three-Part Gauntlet
 
 1. A **three-part gauntlet**: dot-symbol fling platforms, a turret+pellet room with a moving platform, then linked flings.
-2. The second Rattman den.
+2. A crouch-only side room after the first gap, with miscellaneous objects and a radio.
 3. Two cameras and **THREE radios**. Disambiguation: only chamber with three distinct parts and three radios; hardest standard chamber.
 
 GLaDOS: "you will be baked, and then there will be cake." `[Confirmed: 2]`
@@ -211,7 +212,7 @@ GLaDOS: "you will be baked, and then there will be cake." `[Confirmed: 2]`
 ### chamber_19 — The Final Test & Fire Pit
 
 1. A familiar test-room layout with a pellet launcher, receiver, and two 45°-angled platforms, plus a **permanent GREEN pellet**.
-2. An equipment recovery annex with a small button + a malfunctioning chamberlock.
+2. An equipment recovery annex with a small button that opens a nearby door only briefly.
 3. The **fire pit / "party escort" oven** at the route's end. Disambiguation: green permanent pellet + fire pit + cake framing.
 
 GLaDOS: "Welcome to the final test... you have been promised cake." `[Confirmed: 2]`

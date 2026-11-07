@@ -1,7 +1,7 @@
 # Portal -- Architecture
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P1 ingested 2026-06-02 · P2 ingested 2026-06-02 (portal_p2.result.md, deep-research handoff)
 
 Cross-zone structural primitives. The persona reads this file for all cross-zone reasoning -- lookahead warnings (Rule 2), backtrack queries (Rule 3), reachability checks (Rule 4), locks-and-keys notifications (Rule 5). Per-zone gate lists live in `nav/<zone>.md` and reference this file's graph by edge ID. Drift between this file and per-zone files is a bug; run a consistency pass after each ingestion.
@@ -29,8 +29,11 @@ vector-extensions: puzzles, nav
 **Hub nodes:** none
 **Source-language set:** English (Valve, USA); top player-region languages: English, German, Russian
 
-**Numbering note (P1 correction):** In-game chamber plaques use **0-indexed** display numbering -- Test Chamber **00** through Test Chamber 19, 20 navigable areas plus the unnumbered Escape Sequence. The earlier scaffold omitted Chamber 00 and implicitly began at 01; corrected here. (BSP map files group two chambers per file -- `testchmb_a_00` holds Chambers 00-01, etc.; the escape spans `escape_00/01/02` plus GLaDOS' chamber.)
+**Numbering note (P1 correction):** In-game chamber plaques use **0-indexed** display numbering -- Test Chamber **00** through Test Chamber 19, 20 navigable areas plus the unnumbered Escape Sequence. The earlier scaffold omitted Chamber 00 and implicitly began at 01; corrected here.
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+
+BSP map files mostly hold one chamber each; `testchmb_a_00`, `_a_01`, `_a_02` and `_a_03` hold two (Chambers 00-01, 02-03, 04-05, 06-07), as does `_a_07` (Chambers 11-12); `testchmb_a_15` holds Chamber 19 plus the first stretch of the escape, and `escape_00/01/02` cover the rest, ending in GLaDOS' chamber.
+_source: 2026-11-06 https://theportalwiki.com/wiki/List_of_Portal_chambers, https://wiki.sourceruns.org/Portal-Maps.html · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 2]
 
 **Stage 0 rationale (confirmed):**
 - `on-rails`: strictly linear sequence of numbered test chambers; the player cannot skip, reorder, or revisit chambers. Every Emancipation Grill + elevator transition is a one-way chapter gate.
@@ -50,8 +53,8 @@ _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: h
 | chamber_07 | Test Chamber 07 | Unstationary Scaffold introduced |
 | chamber_08 | Test Chamber 08 | Acid/goo introduced |
 | chamber_09 | Test Chamber 09 | Emancipation Grill used as a puzzle element |
-| chamber_10 | Test Chamber 10 | Momentum/fling lessons begin |
-| chamber_11 | Test Chamber 11 | Dual-portal ASHPD acquired ("Lab Rat"); GLaDOS "speedy thing" line |
+| chamber_10 | Test Chamber 10 | Momentum/fling lessons begin; GLaDOS "speedy thing" line |
+| chamber_11 | Test Chamber 11 | Dual-portal ASHPD acquired ("Lab Rat") |
 | chamber_12 | Test Chamber 12 | Combined puzzle |
 | chamber_13 | Test Chamber 13 | First "review" chamber; first Advanced/Challenge variant |
 | chamber_14 | Test Chamber 14 | Challenge chamber; finishable from the first room via a fling |
@@ -61,6 +64,8 @@ _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: h
 | chamber_18 | Test Chamber 18 | Turrets + flinging |
 | chamber_19 | Test Chamber 19 | Final test; fire pit / Incinerator Room ("Partygoer") |
 | escape_seq | Escape Sequence / Surface Finale | Behind-the-scenes maintenance areas + GLaDOS boss fight ("Heartbreaker") |
+
+_source: 2026-11-06 (chamber_10 and chamber_11 rows) https://strategywiki.org/wiki/Portal/Chamber_10, https://theportalwiki.com/wiki/Flinging · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 **Edges (all transitions one-way story-gates):**
 
@@ -82,16 +87,18 @@ _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: h
 | chamber_13 | chamber_14 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | |
 | chamber_14 | chamber_15 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | |
 | chamber_15 | chamber_16 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | |
-| chamber_16 | chamber_17 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | Last-but-one turret chamber; Friendly Fire still earnable in 18 |
+| chamber_16 | chamber_17 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | Last-but-one numbered turret chamber; Friendly Fire still earnable in 18 and in the escape |
 | chamber_17 | chamber_18 | story-gate (elevator, post-Incinerator) | one-way src→tgt | Incinerate Companion Cube to open exit | permanent (within run) | Cube destruction irreversible (Fratricide) |
-| chamber_18 | chamber_19 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | Last turret chamber (Friendly Fire PoNR) |
-| chamber_19 | escape_seq | fall into Incinerator Room → fling out | one-way src→tgt | Survive the fire-pit fling | permanent | Partygoer; no return to test chambers |
+| chamber_18 | chamber_19 | story-gate (elevator + grill) | one-way src→tgt | Solve chamber | chapter-bound | Last numbered turret chamber |
+| chamber_19 | escape_seq | fall into Incinerator Room → portal out | one-way src→tgt | Escape the fire pit | permanent | Partygoer; no return to test chambers |
 | escape_seq | [end / credits] | implosion after GLaDOS defeat | one-way src→tgt | Destroy all 4 cores | permanent | Heartbreaker; game ends |
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: progression (gun/turret rows late-game where noted)_
+_source: 2026-11-06 (chamber_16 -> chamber_17 and chamber_18 -> chamber_19 notes) https://theportalwiki.com/wiki/Turrets, https://strategywiki.org/wiki/Portal/Transmission_Received, https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 3]
+_source: 2026-11-06 (chamber_19 -> escape_seq row) https://strategywiki.org/wiki/Portal/Chamber_19, https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 2]
 
 - **Backtracking: NO chamber allows return to a prior chamber.** Each Emancipation Grill + elevator transition is a hard chapter boundary by design; the grill also resets the player's active portals on pass-through.
-- **Three permanent points of no return:** Chamber 17→18 (cube incineration), Chamber 19→Escape (fire-pit fling), Escape→End (post-GLaDOS implosion).
+- **Three permanent points of no return:** Chamber 17→18 (cube incineration), Chamber 19→Escape (escape from the fire pit), Escape→End (post-GLaDOS implosion).
 
 ## DLC list (names only -- out of P1 scope)
 
@@ -114,12 +121,14 @@ Portal has no named chapters; the narrative is continuous. For tracking:
 
 | Name | Count | Unlock / access | Window & missability | Notes |
 |---|---|---|---|---|
-| Security cameras | 33 (CONFIRMED) | Detach by placing a linked portal on the wall behind the camera | **Run-missable** -- Camera Shy requires all 33 in a single no-load run; counter resets on level skip / reload / death-restart and at game end. Latest camera in Chamber 19; none post-19. | Present in Chambers 02,03,04,05,10,11,13,15,16,17,18,19. Full per-chamber locations in `items/collectibles.md`. |
-| Hidden radios | 26 (CONFIRMED) | Carry each radio to its signal spot (light turns green) | Appear in Chambers 00-19 + escape. **Only count after completing the game once** (Transmission Received). Chamber 00's radio is the only one present/functional on a first run but still grants no achievement progress pre-completion. | Added to existing chambers, not a separate area. Full locations in `items/collectibles.md`. |
+| Security cameras | 33 (CONFIRMED) | Detach by placing a linked portal on the wall behind the camera | **Run-missable** -- Camera Shy requires all 33; skipping or replaying a chamber resets the counter. Latest camera in Chamber 19; none post-19. | Present in Chambers 02,03,04,05,10,11,13,15,16,17,18,19. Full per-chamber locations in `items/collectibles.md`. |
+| Hidden radios | 26 (CONFIRMED) | Carry each radio to its signal spot (light turns green) | Appear in Chambers 00-19 + escape. **Only appear after completing the game once** (Transmission Received); Chamber 00's radio is the only one present on a first run, and it grants no achievement progress pre-completion. | Added to existing chambers, not a separate area. Full locations in `items/collectibles.md`. |
 | Advanced Chambers | 6 | Complete the main game | Post-game menu; always-available once unlocked | Advanced variants of Chambers 13-18. Feed Cupcake/Fruitcake/Vanilla Crazy Cake. |
 | Portal Challenges | 18 tasks | Complete the main game | Post-game menu; always-available once unlocked | Chambers 13-18 each have Challenge mode (least portals / least steps / least time = 3 tasks × 6 chambers = 18). Feed Basic/Rocket/Aperture Science. |
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg · spoiler: none_
+_source: 2026-11-06 (Security cameras row) https://strategywiki.org/wiki/Portal/Camera_Shy, https://www.thonky.com/portal-walkthrough/achievements · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg · spoiler: none_ [Confirmed: 2]
+_source: 2026-11-06 (Hidden radios row) https://theportalwiki.com/wiki/Obtaining_Portal_achievements, https://strategywiki.org/wiki/Portal/Transmission_Received, https://www.pcgamingwiki.com/wiki/Portal · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg · spoiler: none_ [Confirmed: 3]
 
 ## Support Topology
 
@@ -133,7 +142,7 @@ Portal uses automatic checkpoints only -- no manual save stations.
 
 **On death:** Portal automatically reloads the most recent autosave (normally the chamber start). Manual quicksave (default **F6**) is strongly advised before hazardous sections, especially chambers 08, 09, 11, 16, 17, 18, 19, and the escape. `[Confirmed: walkthrough]`
 
-**Map pairing (routing-relevant).** Several chambers share a single `.bsp` map file; the autosave for the second chamber in a pair fires on the inter-chamber elevator transition, not a fresh map load:
+**Map pairing (routing-relevant).** Some chambers share a single `.bsp` map file; the autosave for the second chamber in a pair fires on the inter-chamber elevator transition, not a fresh map load. Chambers 08, 09, 10 and 13-18 each have a map to themselves:
 
 | Map file | Chambers |
 |---|---|
@@ -141,16 +150,27 @@ Portal uses automatic checkpoints only -- no manual save stations.
 | `testchmb_a_01` | 02 – 03 |
 | `testchmb_a_02` | 04 – 05 |
 | `testchmb_a_03` | 06 – 07 |
-| `testchmb_a_04` | 08 – 09 |
-| `testchmb_a_05` | 10 – 11 |
-| `testchmb_a_06` | 12 – 13 |
-| `testchmb_a_07` | 14 – 15 |
-| `testchmb_a_08` | 16 – 17 |
-| `testchmb_a_09` | 18 – 19 |
-| `testchmb_a_15` (+ escape_00) | chamber_19 → escape start (seamless, no load screen) |
-| `escape_00`, `escape_01`, `escape_02` | Escape Sequence (three separate map loads → three autosaves) |
+| `testchmb_a_04` | 08 |
+| `testchmb_a_05` | 09 |
+| `testchmb_a_06` | 10 |
+| `testchmb_a_07` | 11 – 12 |
+| `testchmb_a_08` | 13 |
+| `testchmb_a_09` | 14 |
+| `testchmb_a_10` | 15 |
+| `testchmb_a_11` | 16 |
+| `testchmb_a_13` | 17 |
+| `testchmb_a_14` | 18 |
 
-`[Confirmed: Speed Demos Archive / speedrun map list]`
+`[Confirmed: 2]`
+_source: 2026-11-06 https://theportalwiki.com/wiki/List_of_Portal_chambers, https://wiki.sourceruns.org/Portal-Maps.html · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
+
+| Map file | Chambers |
+|---|---|
+| `testchmb_a_15` | 19 and the first stretch of the escape, Escape (Part 1); no load between them |
+| `escape_00`, `escape_01`, `escape_02` | Escape (Parts 2-4); `escape_02` is GLaDOS' chamber (the escape maps load separately → one autosave each) |
+
+`[Confirmed: 2]`
+_source: 2026-11-06 https://theportalwiki.com/wiki/List_of_Portal_chambers, https://wiki.sourceruns.org/Portal-Maps.html · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 2]
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
@@ -170,7 +190,7 @@ None -- no hub structure. Portal is strictly linear (on-rails).
 | Chamber 17 exit (Incinerator Room) | Incinerate the Weighted Companion Cube | chamber_17 (in-chamber action) | yes | Required to advance; triggers Fratricide. Permanent within the run. |
 | Advanced Chambers (menu) | Complete the main game | escape_seq completion (Heartbreaker) | no | Unlocks all 6 Advanced variants. |
 | Portal Challenges (menu) | Complete the main game | escape_seq completion (Heartbreaker) | no | Unlocks all 18 Challenge tasks. |
-| Radio achievement progress (Transmission Received) | One full completion | escape_seq completion | no | Radios are present earlier but grant no achievement progress until the game is beaten once. |
+| Radio achievement progress (Transmission Received) | One full completion | escape_seq completion | no | Radios other than Chamber 00's do not exist until the game is beaten once. |
 | chamber_00 exit door | Cube on the Heavy Duty Super-Colliding Super Button | in-chamber | yes | First cube-on-button door. [Confirmed: 2] |
 | Every chamberlock exit (all zones) | Pass the Material Emancipation Grill (drops carried objects/portals) | in-chamber | yes | One-way state gate; cube/objects cannot be carried through. [Confirmed: 2] |
 | chamber_01 exit | Cube on button + correct portal-cycle timing | in-chamber | yes | Sequence lock via the cycling static portal. [Confirmed: 2] |
@@ -190,9 +210,12 @@ None -- no hub structure. Portal is strictly linear (on-rails).
 | chamber_17 platform crossings | Three pellets into three receivers | in-chamber | yes | Raises the three platforms. [Confirmed: 2] |
 | chamber_17 twin-door pellet room | Two buttons (cube + player) | in-chamber | yes | Opens both doors to the receiver. [Confirmed: 2] |
 | chamber_18 turret-room door (Part 1→2) | Cube on button | in-chamber | yes | [Confirmed: 2] |
-| chamber_19 chamberlock (malfunctioning) | Central button + manual drop-down (door malfunctions) | in-chamber | yes | Forces the escape route. [Confirmed: 2] |
+| chamber_19 annex door | Annex button (opens the door only briefly) + a portal through it onto the moving platform | in-chamber | yes | Gets you onto the platform to the fire pit. [Confirmed: 2] |
+| escape start: Test Chamber 01 room chamberlock (malfunctioning) | Central button, then drop down the elevator shaft | in-zone | yes | Comes after the fire pit, side rooms, fans and cube tube; the way on is down the shaft. [Confirmed: 2] |
 | escape_seq GLaDOS defeat | All four personality cores incinerated (rocket-redirect) | in-zone | yes | Rockets dislodge cores; incinerator destroys them. [Confirmed: 2] |
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: progression_
+_source: 2026-11-06 (Radio achievement progress row) https://theportalwiki.com/wiki/Obtaining_Portal_achievements, https://strategywiki.org/wiki/Portal/Transmission_Received, https://www.pcgamingwiki.com/wiki/Portal · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 3]
+_source: 2026-11-06 (chamber_19 annex door and Test Chamber 01 room chamberlock rows) https://strategywiki.org/wiki/Portal/Chamber_19, https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 3 · category: mainline · spoiler: story_ [Confirmed: 2]
 
 > Per-chamber gate lists are in `nav/<zone>.md`. Localization toolkit is in `nav/localization.md`. Both populated via P2 ingestion (2026-06-02).
