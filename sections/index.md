@@ -22,4 +22,6 @@ Cross-cutting summaries and per-area notes. For Portal the P1 outputs are the mi
 | Security cameras (33) → Camera Shy | 02,03,04,05,10,11,13,15,16,17,18,19 | Every camera on the first pass through each chamber; last in Chamber 19 |
 | Hidden radios (26) → Transmission Received | 00-19 + escape | Post-completion run only |
 
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Camera_Shy, https://www.thonky.com/portal-walkthrough/achievements · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
+
 Full detail in `missables.md` and `items/collectibles.md`.

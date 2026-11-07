@@ -84,6 +84,7 @@ GLaDOS: prior no-monitoring claim "was an outright fabrication." `[Confirmed: 2]
 1. First appearance of **brown (non-portalable) vs. grey (portalable) wall texturing**.
 2. A **High Energy Pellet launcher + receiver** with a victory lift — the first pellet chamber.
 3. Radio above the launcher; no cameras. Disambiguation: simplest single-pellet→lift layout; chamber_07/08 add moving platforms.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_06, https://www.thonky.com/portal-walkthrough/test-chamber-06 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 GLaDOS: the pellet "can and has caused permanent disabilities, such as vaporization." `[Confirmed: 2]`
 
@@ -134,6 +135,7 @@ GLaDOS: "speedy thing goes in, speedy thing comes out" / "how a portal affects f
 1. The **dual portal gun on a central pedestal** reached by a pellet-powered moving platform.
 2. A **toxic-goo main floor** (GLaDOS warns it "will kill you").
 3. One camera above the entranceway; radio on a ledge near the pellet receiver in the main room. Disambiguation: dual-gun acquisition + goo floor (vs. chamber_02's blue-only dry room).
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_11, https://www.thonky.com/portal-walkthrough/test-chamber-11 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 GLaDOS: device "now more valuable than the organs and combined incomes of everyone in `<subject hometown here>`." `[Confirmed: 2]`
 
@@ -154,6 +156,7 @@ GLaDOS (fragmented): "…fling yourself…need to fling into space…" `[Confirm
 1. A **two-step double-button puzzle** (both buttons normally inaccessible) with a pellet-powered platform and a one-dot ceiling symbol.
 2. Three cameras (entranceway; main-room wall; final passage).
 3. Radio on a ledge in the main room, grabbed from the moving platform. Disambiguation: first post-dual-gun puzzle; first Challenge chamber.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_13, https://www.thonky.com/portal-walkthrough/test-chamber-13 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 GLaDOS: "this next test could take a very, very long time." `[Confirmed: 2]`
 
@@ -164,6 +167,7 @@ GLaDOS: "this next test could take a very, very long time." `[Confirmed: 2]`
 1. **Rising/retracting stairs** and a raised cube platform requiring a fling.
 2. A **sludge room with platforms that rise and sink**, plus a pellet launcher antechamber and a long around-corners pellet route.
 3. Radio on a ledge on the right of the first room; no cameras. Disambiguation: rising-then-retracting stairs + long pellet routing.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_14, https://www.thonky.com/portal-walkthrough/test-chamber-14 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 GLaDOS: "A complimentary victory lift has been activated." `[Confirmed: 2]`
 
@@ -203,6 +207,7 @@ GLaDOS: "The vital apparatus vent will deliver a weighted companion cube in 3…
 
 1. A **three-part gauntlet**: dot-symbol fling platforms, a turret+pellet room with a moving platform, then linked flings.
 2. A crouch-only side room after the first gap, with miscellaneous objects and a radio.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_18, https://www.thonky.com/portal-walkthrough/test-chamber-18 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 3. Two cameras and **THREE radios**. Disambiguation: only chamber with three distinct parts and three radios; hardest standard chamber.
 
 GLaDOS: "you will be baked, and then there will be cake." `[Confirmed: 2]`
@@ -211,8 +216,10 @@ GLaDOS: "you will be baked, and then there will be cake." `[Confirmed: 2]`
 
 ### chamber_19 — The Final Test & Fire Pit
 
-1. A familiar test-room layout with a pellet launcher, receiver, and two 45°-angled platforms, plus a **permanent GREEN pellet**.
+1. A familiar test-room layout with a pellet launcher, receiver, and two 45°-angled platforms; the **permanent GREEN pellet** is not in this room but in the hallway you ride through on the moving platform.
+_source: 2026-11-06 https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:walkthrough]
 2. An equipment recovery annex with a small button that opens a nearby door only briefly.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_19, https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 3. The **fire pit / "party escort" oven** at the route's end. Disambiguation: green permanent pellet + fire pit + cake framing.
 
 GLaDOS: "Welcome to the final test... you have been promised cake." `[Confirmed: 2]`
