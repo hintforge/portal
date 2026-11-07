@@ -1,7 +1,7 @@
 # Portal -- Controls Reference
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P1 ingested 2026-06-02 (portal_p1.result.md)
 
 ## Default PC keybindings (keyboard + mouse)
@@ -15,9 +15,14 @@
 | Jump | Space |
 | Crouch | Ctrl |
 | Look | Mouse |
-| Pause / menu | Esc |
+| Main menu | Esc |
+| Pause game | Pause |
+| Take screenshot | F5 |
+| Quick save | F6 |
+| Quick load | F9 |
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+_source: 2026-11-06 (Main menu, Pause game, Take screenshot, Quick save, Quick load rows) https://strategywiki.org/wiki/Portal/Controls · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:walkthrough]
 
 > Note: blue = Left-click, orange = Right-click (the earlier scaffold had these reversed; corrected from P1).
 
@@ -37,14 +42,17 @@ _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: h
 | `portals_resizeall <w> <h>` | Resize all portals |
 | `sv_gravity <value>` | Adjust gravity (default 600) |
 | `host_timescale <value>` | Speed up / slow down game time |
-| `fov` / `cl_fov` / `fov_desired <value>` | Field of view (FOV commands require `sv_cheats`) |
+| `fov_desired <value>` | Field of view beyond the menu slider (the slider covers 75 to 110; `fov_desired` goes up to 120) |
+| `fov` / `cl_fov <value>` | Field of view (whether these need `sv_cheats` is not confirmed by the sources checked) |
 | `sensitivity <value>` | Mouse sensitivity |
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+_source: 2026-11-06 (fov_desired and fov / cl_fov rows) https://www.pcgamingwiki.com/wiki/Portal · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:wiki]
 
 ## Controller layout
 
-Controller is supported. Specific button mapping not documented in the P1 sources -- defer to live lookup or P2/P3. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+Controller is supported: full controller support has been native since the 2022 update, and StrategyWiki's Controls page has Xbox 360, PlayStation 3 and Nintendo Switch columns. The exact button mapping is not recorded here.
+_source: 2026-11-06 https://www.pcgamingwiki.com/wiki/Portal, https://strategywiki.org/wiki/Portal/Controls · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 ## Commonly recommended remaps / technique notes
 

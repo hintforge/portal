@@ -1,7 +1,7 @@
 # Portal -- Achievements
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P1 ingested 2026-06-02 (portal_p1.result.md)
 **stub_source:** Steam (via pandallax.com + Wikipedia cross-check), Stage 0 2026-06-02
 **coverage:** 15 stubs / 15 resolved / 0 deferred / 0 unreachable
@@ -36,10 +36,11 @@ Every player who reaches the point gets these on the default path.
 
 ### Partygoer
 - **id:** partygoer · **hidden:** no · **trigger_type:** progression
-- **trigger:** Escape the fire pit by flinging to a higher ledge at the end of **Chamber 19** ("make the correct party escort submission position decision").
+- **trigger:** Escape the fire pit with portals, reaching the ledge/platform above it, at the end of **Chamber 19** ("make the correct party escort submission position decision").
 - **missable:** no · **ponr-window:** n/a (unmissable) · **prereqs:** none
 - **vector-binding:** `nav/architecture.md` (chamber_19 → escape_seq edge)
 - enemy-tier 0 · puzzle-tier 0 · spoiler: late-game
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_19, https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 2]
 
 ### Heartbreaker
 - **id:** heartbreaker · **hidden:** no · **trigger_type:** progression
@@ -113,24 +114,27 @@ A finite, enumerable set completed in full.
 
 ### Camera Shy
 - **id:** camera_shy · **hidden:** no · **trigger_type:** collection
-- **trigger:** Detach **all 33 security cameras** with the portal gun in a **single no-load run** (Chambers 02,03,04,05,10,11,13,15,16,17,18,19).
-- **missable:** **yes** -- counter resets on level skip, reload, death-restart, and at game end. · **ponr-window:** latest camera in **Chamber 19**; none after. · **prereqs:** dual-portal gun for most cameras
+- **trigger:** Detach **all 33 security cameras** with the portal gun, getting every camera the first time through each chamber (Chambers 02,03,04,05,10,11,13,15,16,17,18,19).
+- **missable:** **yes** -- the counter resets if you skip or replay a chamber. · **ponr-window:** latest camera in **Chamber 19**; none after. · **prereqs:** dual-portal gun for most cameras
 - **set members:** all 33 enumerated in `items/collectibles.md`
 - **vector-binding:** `items/collectibles.md`, `sections/missables.md`
 - enemy-tier 0 · puzzle-tier 0 · spoiler: none
 - **Note:** the common-knowledge claim that interrupting GLaDOS's camera voice lines breaks this is **false** -- detach counter and voice-line counter are separate.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Camera_Shy, https://www.thonky.com/portal-walkthrough/achievements · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
-> **Cross-system dependency** -- see `dependencies.md` PON-002: No cameras exist in escape_seq or after; all chamber_19 cameras (3) must be collected before gate-05; transitioning to escape_seq at gate-07 is the final PoNR. Death or any reload also resets the counter.
+> **Cross-system dependency** -- see `dependencies.md` PON-002: No cameras exist in escape_seq or after; all chamber_19 cameras (3) must be collected before the fire pit (chamber_19 gate-06); transitioning to escape_seq at gate-07 is the final PoNR. Skipping or replaying a chamber resets the counter.
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Camera_Shy, https://strategywiki.org/wiki/Portal/Chamber_19 · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Single source -- verify · class:walkthrough]
 
 ### Transmission Received
-- **id:** transmission_received · **hidden:** **yes** (shown on Steam as "..?") · **trigger_type:** collection
+- **id:** transmission_received · **hidden:** unknown (listed on Steam by name with the placeholder description "..?"; the sources checked state no hidden flag) · **trigger_type:** collection
 - **trigger:** Collect **all 26 hidden radios** and bring each to its signal spot (light turns green).
-- **missable:** no · **ponr-window:** n/a · **prereqs:** **complete the game once** -- radios only count after a full completion.
+- **missable:** no · **ponr-window:** n/a · **prereqs:** **complete the game once** -- the radios other than Chamber 00's only appear after a full completion.
 - **set members:** all 26 enumerated in `items/collectibles.md`
 - **vector-binding:** `items/collectibles.md`
 - enemy-tier 0 · puzzle-tier 0 · spoiler: none (achievement *name* gated by hidden flag)
+_source: 2026-11-06 https://theportalwiki.com/wiki/Obtaining_Portal_achievements, https://strategywiki.org/wiki/Portal/Transmission_Received, https://www.pcgamingwiki.com/wiki/Portal, https://www.thonky.com/portal-walkthrough/achievements · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 3]
 
-> **Cross-system dependency** -- see `dependencies.md` SEQ-001: Radios grant no achievement progress until the game is completed once; plan a dedicated post-completion radio run.
+> **Cross-system dependency** -- see `dependencies.md` SEQ-001: Radios other than the Chamber 00 one do not exist until the game is completed once; plan a dedicated post-completion radio run.
 
 ---
 
@@ -153,18 +157,17 @@ Found by deliberate exploration of a non-obvious interaction.
 
 ### Friendly Fire
 - **id:** friendly_fire · **hidden:** no · **trigger_type:** discovery
-- **trigger:** Pick up **one turret** and use it to **physically knock over another turret**. Easiest in Chamber 16 (turret-dense); also possible in Chamber 18.
-- **missable:** run-bound -- not strictly missable while turrets exist, but **Chamber 18 is the last turret chamber** (PoNR). · **prereqs:** reach a turret chamber (16)
-- **vector-binding:** `mechanics.md` (turret tactics), `sections/missables.md`
+- **trigger:** Pick up **one turret** and use it to **physically knock over another turret**. Easiest in Chamber 16 (turret-dense); turrets also appear in Chamber 18 and in the escape.
+- **missable:** no -- turrets keep appearing after Chamber 18 (a three-turret ambush in Escape 01, a turret arena in Escape 02), so leaving Chamber 18 does not lock it out. · **prereqs:** reach a turret chamber (16)
+- **vector-binding:** `mechanics.md` (turret tactics)
 - enemy-tier 2 · puzzle-tier 0 · spoiler: late-game
-
-> **Cross-system dependency** -- see `dependencies.md` PON-001: Exiting chamber_18 permanently locks out Friendly Fire; the elevator to chamber_19 is the point of no return.
+_source: 2026-11-06 https://theportalwiki.com/wiki/Turrets, https://strategywiki.org/wiki/Portal/Transmission_Received, https://www.thonky.com/portal-walkthrough/test-chamber-19 · capture: browser_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 3]
 
 ---
 
 ## Coverage check (P1 ingestion contract -- satisfied)
 
-All 15 stubs **resolved** -- each carries an `ach:` overlay on at least one corpus claim and a populated entry above. Stub corrections applied: Basic/Rocket/Aperture Science triggers (tiered medals across all 18 tasks, not per-map gold); Transmission Received hidden flag (yes); Terminal Velocity reclassified to threshold; Friendly Fire PoNR extended to Chamber 18. No deferrals, no unreachable entries.
+All 15 stubs **resolved** -- each carries an `ach:` overlay on at least one corpus claim and a populated entry above. Stub corrections applied: Basic/Rocket/Aperture Science triggers (tiered medals across all 18 tasks, not per-map gold); Transmission Received hidden flag (unknown -- Steam lists it by name with the placeholder description "..?" and the sources checked state no hidden flag); Terminal Velocity reclassified to threshold. No deferrals, no unreachable entries.
 
 ## Sources
 

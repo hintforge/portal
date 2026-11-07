@@ -1,7 +1,7 @@
 # Section -- Escape Sequence / Surface Finale (GLaDOS boss)
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P1 ingested 2026-06-02
 
 > **Spoiler tier:** this section is late-game / story content. The player's current settings are enemy-tier 0, puzzle-tier 1 -- the persona must NOT volunteer boss existence, mechanics, or narrative beats preemptively (warning_tiers.md Tier 0). Content is written in full; the reader gates delivery at read-time and serves it post-encounter on request.
@@ -11,7 +11,8 @@ After Chamber 19, the player navigates the behind-the-scenes maintenance areas g
 ## GLaDOS boss fight
 
 - Shortly after you enter, GLaDOS drops a **Morality Core** (purple). Incinerate it: press the red button and drop the core through a portal into the incinerator. This triggers a **6-minute neurotoxin countdown** and activates a rocket sentry (rocket turret). _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game · vector: boss_
-- **Intended defeat method:** redirect the rocket-turret's rockets through a portal into GLaDOS to dislodge each remaining core. Core locations are fixed each playthrough: one on a pillar, one on a high platform, one airborne. Incinerate all of them within the time limit. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game · vector: boss_
+- **Intended defeat method:** redirect the rocket-turret's rockets through a portal into GLaDOS to dislodge each remaining core. Core locations are fixed each playthrough: one lands on a light fixture, one on a ledge up above, one is held in mid-air. Incinerate all of them within the time limit.
+_source: 2026-11-06 https://www.thonky.com/portal-walkthrough/beyond-chamber-19 · capture: browser_fetch · confidence: medium · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game · vector: boss_ [Single source -- verify · class:walkthrough]
 - **Faster exploit:** a single live turret's bullets also damage GLaDOS -- a short spray can dislodge multiple cores at once without waiting for each to incinerate, much faster than the rocket method. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium [community-wiki + forum] · enemy-tier: 2 · puzzle-tier: 0 · category: easter-egg · spoiler: late-game · vector: boss_
 - **Completion:** destroying the final core ends the fight and triggers "Heartbreaker." _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: story · ach: heartbreaker · achievement-hidden: no · trigger_type: progression_
   > see achievements.md for the Heartbreaker entry.

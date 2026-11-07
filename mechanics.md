@@ -1,7 +1,7 @@
 # Portal -- Core Mechanics
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P1 ingested 2026-06-02 (portal_p1.result.md)
 
 Portal is a physics-based puzzle game. All gameplay derives from one core tool (the portal gun) and one core rule (momentum is conserved between portals). Deep weapon-item detail for the ASHPD lives in `items/weapons.md`; this file covers the systems and hazards.
@@ -24,12 +24,15 @@ See `items/weapons.md` for the full weapon-item summary.
 
 ## Momentum conservation / fling mechanic
 
-**Core rule:** momentum is conserved; exit speed equals entry speed, redirected along the exit portal's surface normal. GLaDOS states it in Chamber 11: *"Momentum, a function of mass and velocity, is conserved between portals. In layman's terms, speedy thing goes in, speedy thing comes out."* _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+**Core rule:** momentum is conserved; exit speed equals entry speed, redirected along the exit portal's surface normal. GLaDOS states it in Chamber 10: *"Momentum, a function of mass and velocity, is conserved between portals. In layman's terms, speedy thing goes in, speedy thing comes out."*
+_source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_10, https://theportalwiki.com/wiki/Flinging · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
 - **Fall→fling conversion:** falling into a floor portal and exiting a wall portal flings you horizontally at the speed you reached falling. This underlies most advanced solutions from Chamber 10 onward. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: progression_
 - **Engine constants:** gravity is governed by `sv_gravity`, which defaults to **600** in Portal (Valve's Source default is 800 in other games). `sv_maxvelocity` caps ballistic speed at **3500 per axis** -- not total magnitude, so diagonal flings can exceed 3500 total. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium (engine-wide default, not a Portal-specific Valve page) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none · conflicts: frequently misstated as a total-magnitude cap_
 - **Air-strafe:** Portal 1 allows air-strafing during a fling to bend the arc (more air control than Portal 2). _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low [single source] · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: progression_
-- **Edge cases:** on non-parallel portals the player is reoriented upright to gravity after exit; "portal bumping" (placing a portal onto another bumps it aside and pushes the player) is used to skip Chambers 16-17; the edge-glitch / portal-ledging lets a portal sit on otherwise-invalid edges. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 2 · category: easter-egg · spoiler: late-game_
+- **Edge cases:** on non-parallel portals the player is reoriented upright to gravity after exit; the edge-glitch / portal-ledging lets a portal sit on otherwise-invalid edges. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 2 · category: easter-egg · spoiler: late-game_
+- **Portal bumping:** placing a portal onto another bumps the other portal aside, next to the one just placed; it can be used to skip certain chambers.
+_source: 2026-11-06 https://theportalwiki.com/wiki/Portals · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 2 · category: easter-egg · spoiler: late-game_ [Single source -- verify · class:wiki]
 - **Speedrun characterization (Accelerated Back Hopping):** the dominant movement tech is ABH, a Source/OrangeBox glitch replacing the patched-out bunny hop. New speed per perfect hop ≈ (current speed × 2 − speed limit); gain is exponential. Per the SourceRuns Wiki, the speed limit is **165 UPS while crouched in Portal specifically** (vs. 209 elsewhere), 225 walking, 285 running, 352 sprinting. Discovered by Spider-Waffle. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 2 · category: easter-egg · spoiler: none_
 - **Fall-velocity reset on death/respawn:** not documented in reviewed sources. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low [hypothesis -- unverified] · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: none_
 
@@ -55,7 +58,8 @@ See `items/weapons.md` for the full weapon-item summary.
 
 ### High Energy Pellet (introduced Chamber 06)
 - A bouncing energy ball that kills in one hit; route it through a portal into a receiver to power lifts/doors. The receiver shines a red light on the ceiling to help aim the portal. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: none · vector: puzzle_
-- **Underexplained:** pellets recharge their lifespan when passing through a portal, extending the window before they disintegrate. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low [single source] · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: none_
+- **Pellet lifespan:** pellets recharge their lifespan each time they pass through a portal, extending the window before they disintegrate; otherwise they fade out after a few bounces.
+_source: 2026-11-06 https://theportalwiki.com/wiki/High_Energy_Pellet, https://strategywiki.org/wiki/Portal/Gameplay · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: none_ [Confirmed: 2]
 - A **green, non-disintegrating** variant of the High Energy Pellet appears in Chamber 19. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
 
 ### Unstationary Scaffold (introduced Chamber 07)
