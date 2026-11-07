@@ -1,14 +1,15 @@
 # Portal -- Nav: Test Chamber 09
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P2 ingested 2026-06-02 (portal_p2.result.md)
 
 **Zone:** `chamber_09` · **Segment:** Blue-portal segment · **Spoiler tier:** progression
 
 ## Entry
 
-From `chamber_08` via chamberlock elevator. Autosave on inter-chamber elevator transition (within `testchmb_a_04`, shared with chamber_08).
+From `chamber_08` via chamberlock elevator. Autosave on map load (`testchmb_a_05`, which holds Chamber 09 only).
+_source: 2026-11-06 https://theportalwiki.com/wiki/List_of_Portal_chambers, https://wiki.sourceruns.org/Portal-Maps.html · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: progression_ [Confirmed: 2]
 
 ## Exit
 
@@ -34,7 +35,7 @@ To `chamber_10` via chamberlock elevator (one-way, chapter-bound).
 | chamber_09-gate-04 | Button across the grid | puzzle | Pass a cube through to the button section and place it to open the chamberlock door. | no | no | [Confirmed: 2] |
 | chamber_09-gate-05 | Exit chamberlock elevator | exit | Elevator to chamber_10. | no | yes | [Confirmed: 2] |
 
-**Checkpoint:** Chamber-entry autosave on inter-chamber elevator transition. Note: chamber_09's main room is revisited (rearranged) during the escape sequence. The emancipation grid here is used as a puzzle element, not just an exit device.
+**Checkpoint:** Chamber-entry autosave on map load. Note: chamber_09's main room is revisited (rearranged) during the escape sequence. The emancipation grid here is used as a puzzle element, not just an exit device.
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: progression_
 

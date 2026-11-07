@@ -1,7 +1,7 @@
 # Portal -- Nav: Test Chamber 05
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P2 ingested 2026-06-02 (portal_p2.result.md)
 
 **Zone:** `chamber_05` · **Segment:** Blue-portal segment · **Spoiler tier:** none
@@ -22,7 +22,7 @@ To `chamber_06` via chamberlock elevator (one-way, chapter-bound).
 
 1. **Three cameras** and **one radio** (behind the two-button door) — collectible.
 2. Two cubes, two buttons — both buttons must be held simultaneously to open the exit door.
-3. A permanent orange portal in the ceiling leads to the chamberlock; fire a blue portal beside yourself to ascend once both buttons are held.
+3. A permanent orange portal in the ceiling, a floor above the chamberlock, leads to the chamberlock: once the door is open, fire a blue portal on the wall beside you, walk through it and you fall out of the ceiling portal down next to the chamberlock.
 
 ## Sequential gates
 
@@ -32,14 +32,16 @@ To `chamber_06` via chamberlock elevator (one-way, chapter-bound).
 | chamber_05-gate-02 | First button | puzzle | Place the first cube on one of two floor buttons. | no | no | [Confirmed: 2] |
 | chamber_05-gate-03 | Platform cube + permanent orange portal | puzzle | A second cube sits on one of two raised platforms; the other platform holds a fixed orange portal used to reach it. | no | no | [Confirmed: 2] |
 | chamber_05-gate-04 | Second button (two-button door) | puzzle | Place the second cube on the second button; both buttons open the door. | no | no | [Confirmed: 2] |
-| chamber_05-gate-05 | Radio behind two-button door | collectible | Radio sits behind the door opened by both buttons; can be dropped into the pit and carried out. | Radio (yes) | no | [Confirmed: 2] |
+| chamber_05-gate-05 | Radio behind two-button door | collectible | Radio sits behind the door opened by both buttons. Fire a portal under it before you step through that door (the door shuts behind you), then drop it into the pit that held a cube: the pit is where the radio is delivered. | Radio (yes) | no | [Confirmed: 2] |
 | chamber_05-gate-06 | GLaDOS "outright fabrication" line | story | GLaDOS admits the prior no-monitoring claim was false. | no | yes | [Confirmed: 2] |
-| chamber_05-gate-07 | Ceiling orange portal to chamberlock | nav | A fixed orange portal in the ceiling above the chamberlock (one floor up); fire a blue portal beside you to reach it. | Cameras ×3 (yes) | yes | [Confirmed: 2] |
+| chamber_05-gate-07 | Ceiling orange portal to chamberlock | nav | A fixed orange portal in the ceiling above the chamberlock (one floor up); fire a blue portal on the wall beside you and walk through it to fall out of the ceiling portal next to the chamberlock. | Cameras ×3 (yes) | yes | [Single source -- verify · class:walkthrough] |
 | chamber_05-gate-08 | Exit chamberlock elevator | exit | Elevator to chamber_06. | no | yes | [Confirmed: 2] |
 
 **Checkpoint:** Chamber-entry autosave on inter-chamber elevator transition. Three cameras: above doorway next to chamber number, above/beside first exit door, in the final ceiling-portal section. Two cubes and two buttons distinguishes this from chamber_04 (one cube/one button).
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+_source: 2026-11-06 (chamber_05-gate-05) https://strategywiki.org/wiki/Portal/Chamber_05, https://www.thonky.com/portal-walkthrough/transmission-received · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
+_source: 2026-11-06 (entry tip 3, chamber_05-gate-07) https://strategywiki.org/wiki/Portal/Chamber_05 · capture: browser_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source -- verify · class:walkthrough]
 
 ## Sources
 

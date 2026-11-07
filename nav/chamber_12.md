@@ -1,14 +1,15 @@
 # Portal -- Nav: Test Chamber 12
 
 **status:** research-integrated
-**last_reconciled:** 2026-06-02
+**last_reconciled:** 2026-11-06
 **research_run:** P2 ingested 2026-06-02 (portal_p2.result.md)
 
 **Zone:** `chamber_12` · **Segment:** Dual-portal segment · **Spoiler tier:** progression
 
 ## Entry
 
-From `chamber_11` via chamberlock elevator. Autosave on map load (`testchmb_a_06`, shared with chamber_13).
+From `chamber_11` via chamberlock elevator. Autosave on inter-chamber elevator transition (within `testchmb_a_07`, shared with chamber_11).
+_source: 2026-11-06 https://theportalwiki.com/wiki/List_of_Portal_chambers, https://wiki.sourceruns.org/Portal-Maps.html · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: progression_ [Confirmed: 2]
 
 ## Exit
 
@@ -35,9 +36,10 @@ To `chamber_13` via chamberlock elevator (one-way, chapter-bound).
 | chamber_12-gate-05 | Fourth level cube placement | puzzle | Carry a cube up, place it on the button, then re-fling to the fourth level to reach the chamberlock. | no | no | [Confirmed: 2] |
 | chamber_12-gate-06 | Exit chamberlock elevator | exit | Elevator to chamber_13. | no | yes | [Confirmed: 2] |
 
-**Checkpoint:** Chamber-entry autosave on map load. Vertical dot-numbered climb is unique — no other chamber has this layout. First post-dual-gun chamber requiring both portal types.
+**Checkpoint:** Chamber-entry autosave on the inter-chamber elevator transition. Vertical dot-numbered climb is unique — no other chamber has this layout. First chamber after the dual-portal gun is acquired (chamber_11 already needs both portal ends once you hold it).
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: progression_
+_source: 2026-11-06 (checkpoint paragraph) https://strategywiki.org/wiki/Portal/Chamber_11, https://theportalwiki.com/wiki/Portal_Test_Chamber_11 · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 1 · category: mainline · spoiler: progression_ [Confirmed: 2]
 
 ## Sources
 
