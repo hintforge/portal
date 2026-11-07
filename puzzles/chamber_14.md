@@ -16,4 +16,4 @@ _source: 2026-11-06 https://strategywiki.org/wiki/Portal/Chamber_14 · capture: 
 - **Collectible:** Radio 15/26 is in this chamber (see `items/collectibles.md`).
 - No detachable cameras in this chamber.
 
-> Chamber 15 is the more common venue for the **Terminal Velocity** (infinite-fall) achievement; see `achievements.md`.
+> **Terminal Velocity** (the infinite-fall achievement) works in any chamber with portal surfaces on both the ceiling and the floor; see `achievements.md`.

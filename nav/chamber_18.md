@@ -39,7 +39,7 @@ To `chamber_19` via chamberlock elevator (one-way, chapter-bound). Last numbered
 | chamber_18-gate-07 | Two cameras | collectible | Cameras: next to the window at the turret-room entrance; on the wall of the final-room entrance. | Cameras ×2 (yes) | partial | [Confirmed: 2] |
 | chamber_18-gate-08 | Exit chamberlock elevator | exit | Elevator to chamber_19. | no | yes | [Confirmed: 2] |
 
-**Checkpoint:** Chamber-entry autosave on map load. Three radios + two cameras. The chamber start (vertical ceiling/floor surface) is a common spot for the "Terminal Velocity" achievement via an infinite portal fall.
+**Checkpoint:** Chamber-entry autosave on map load. Three radios + two cameras.
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
 _source: 2026-11-06 (chamber_18-gate-04, chamber_18-gate-06) https://strategywiki.org/wiki/Portal/Chamber_18, https://www.thonky.com/portal-walkthrough/transmission-received · capture: browser_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_ [Confirmed: 2]

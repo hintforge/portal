@@ -12,7 +12,7 @@ Cross-cutting summaries and per-area notes. For Portal the P1 outputs are the mi
 |---|---|---|
 | [`missables.md`](missables.md) | Cross-chamber missables catalog | research-integrated |
 | [`story_notes.md`](story_notes.md) | GLaDOS narrative beats + lore (tier-gated) | research-integrated |
-| [`escape_seq.md`](escape_seq.md) | Escape Sequence + GLaDOS boss fight + ending | research-integrated |
+| [`escape_seq.md`](escape_seq.md) | Escape Sequence + finale | research-integrated |
 | Per-chamber walkthroughs (00-19) | Numbered test chambers | deferred to live play |
 
 ## Missables summary (quick reference)

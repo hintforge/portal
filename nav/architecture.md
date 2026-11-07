@@ -63,7 +63,7 @@ _source: 2026-11-06 https://theportalwiki.com/wiki/List_of_Portal_chambers, http
 | chamber_17 | Test Chamber 17 | Weighted Companion Cube; ends at Incinerator Room ("Fratricide") |
 | chamber_18 | Test Chamber 18 | Turrets + flinging |
 | chamber_19 | Test Chamber 19 | Final test; fire pit / Incinerator Room ("Partygoer") |
-| escape_seq | Escape Sequence / Surface Finale | Behind-the-scenes maintenance areas + GLaDOS boss fight ("Heartbreaker") |
+| escape_seq | Escape Sequence / Surface Finale | Behind-the-scenes maintenance areas + finale ("Heartbreaker") |
 
 _source: 2026-11-06 (chamber_10 and chamber_11 rows) https://strategywiki.org/wiki/Portal/Chamber_10, https://theportalwiki.com/wiki/Flinging · capture: browser_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2]
 
@@ -113,7 +113,7 @@ Portal has no named chapters; the narrative is continuous. For tracking:
 | Pre-gun tutorial | chamber_00 -- chamber_01 | No player-controlled portals; automated portals only |
 | Blue-portal segment | chamber_02 -- chamber_10 | Blue-only ASHPD from Chamber 02; single-portal puzzles, fling lessons begin Ch10 |
 | Dual-portal segment | chamber_11 -- chamber_19 | Orange portal acquired Chamber 11; dual portals enable the fling mechanic |
-| Escape Sequence | escape_seq | Post-Chamber-19; no more test chambers; GLaDOS boss fight + ending |
+| Escape Sequence | escape_seq | Post-Chamber-19; no more test chambers; finale |
 
 ## Optional Content
 

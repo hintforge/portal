@@ -144,7 +144,8 @@ A cumulative count without a finite-set ceiling.
 
 ### Terminal Velocity
 - **id:** terminal_velocity · **hidden:** no · **trigger_type:** threshold *(reclassified from the Stage-0 stub's "discovery": the trigger is a cumulative fall distance, not a hidden interaction)*
-- **trigger:** Fall **30,000 feet in one continuous fall** -- place a floor portal directly under a ceiling portal and fall in an infinite loop (commonly set up in Chamber 15). Hitting the ground resets the counter.
+- **trigger:** Fall **30,000 feet** -- in any test chamber where you can put portals on both the ceiling and the floor, place one above and one below you, jump in and wait about 5 minutes.
+_source: 2026-11-07 https://theportalwiki.com/wiki/Obtaining_Portal_achievements · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Single source]
 - **missable:** no (doable in any chamber with facing portalable ceiling+floor) · **ponr-window:** n/a · **prereqs:** dual-portal gun (Chamber 11)
 - **vector-binding:** `mechanics.md` (fling), `puzzles/chamber_14.md`
 - enemy-tier 0 · puzzle-tier 0 · spoiler: none

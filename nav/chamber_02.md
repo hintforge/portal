@@ -21,7 +21,7 @@ To `chamber_03` via chamberlock elevator (one-way, chapter-bound).
 ## Entry tips
 
 1. **Three cameras** and **one radio** here — all collectible (missable: partial). Detach cameras before passing the emancipation grill at exit.
-2. Picking up the blue-only portal gun does NOT trigger "Lab Rat" — that achievement fires in chamber_11 on the fully powered dual device.
+2. Picking up the blue-only portal gun does NOT trigger "Lab Rat"; that achievement comes later.
 3. Goal: use the blue portal gun (acquired mid-chamber) to fire a blue portal and return to the entry ledge; the chamberlock door opens automatically.
 
 ## Sequential gates
@@ -36,7 +36,7 @@ To `chamber_03` via chamberlock elevator (one-way, chapter-bound).
 | chamber_02-gate-06 | Three detachable cameras | collectible | Cameras above the main window, at the end of the stairway, and in the entranceway. | Cameras ×3 (yes) | partial | [Confirmed: 2] |
 | chamber_02-gate-07 | Exit chamberlock elevator | exit | Elevator to chamber_03. | no | yes | [Confirmed: 2] |
 
-**Checkpoint:** Chamber-entry autosave on map load. Note: the blue-only gun acquired here is NOT the "Lab Rat" trigger — that fires on the fully powered dual device in chamber_11.
+**Checkpoint:** Chamber-entry autosave on map load. Note: the blue-only gun acquired here is NOT the "Lab Rat" trigger; that comes later.
 
 _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
