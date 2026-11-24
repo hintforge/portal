@@ -1,7 +1,7 @@
 # Portal -- Settings Reference
 
 **status:** research-integrated
-**last_reconciled:** 2026-11-06
+**last_reconciled:** 2026-11-24
 **research_run:** P1 ingested 2026-06-02 (portal_p1.result.md)
 
 > Menu-tab names below are organized by the Source-engine Options menu's typical structure (Video / Audio / Keyboard / Mouse). Exact in-game tab labels were **not confirmed** by P1 sources -- treat the tab grouping as approximate and the per-setting effects as the verified content. Several puzzle-clarity settings live only behind console commands (see `controls.md`).
@@ -20,7 +20,8 @@ _source: 2026-11-06 (Field of View row) https://www.pcgamingwiki.com/wiki/Portal
 
 ## Audio
 
-Standard Source-engine audio sliders (master / music / etc.). No puzzle-relevant audio setting surfaced in P1 beyond keeping GLaDOS dialogue audible (chamber-specific lines double as landmark cues -- see `nav/architecture.md` localization note). _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+Standard Source-engine audio sliders (master / music / etc.). No puzzle-relevant audio setting surfaced in P1 beyond keeping GLaDOS dialogue audible (chamber-specific lines double as landmark cues -- see `nav/architecture.md` localization note).
+_source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: low · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
 ## Keyboard / Mouse
 

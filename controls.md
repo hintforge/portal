@@ -1,7 +1,7 @@
 # Portal -- Controls Reference
 
 **status:** research-integrated
-**last_reconciled:** 2026-11-06
+**last_reconciled:** 2026-11-24
 **research_run:** P1 ingested 2026-06-02 (portal_p1.result.md)
 
 ## Default PC keybindings (keyboard + mouse)
@@ -56,7 +56,8 @@ _source: 2026-11-06 https://www.pcgamingwiki.com/wiki/Portal, https://strategywi
 
 ## Commonly recommended remaps / technique notes
 
-- **Mouse sensitivity matters for portal-aiming precision.** The speedrun Glitchless category caps sensitivity at 10.0. Tune sensitivity for accurate edge placements (important for Camera Shy). _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+- **Mouse sensitivity matters for portal-aiming precision.** The speedrun Glitchless category caps sensitivity at 10.0. Tune sensitivity for accurate edge placements (important for Camera Shy).
+_source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 - **Fling (momentum conservation):** falling into a floor portal and exiting a wall portal converts fall speed to horizontal velocity. Full mechanic in `mechanics.md`.
 - **Crosshair colour:** the crosshair changes colour over a valid portal surface -- learn to read it for fast orientation and edge placements.
 

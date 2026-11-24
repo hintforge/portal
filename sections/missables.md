@@ -1,7 +1,7 @@
 # Sections -- Missables
 
 **status:** research-integrated
-**last_reconciled:** 2026-11-06
+**last_reconciled:** 2026-11-24
 **research_run:** P1 ingested 2026-06-02
 
 Aggregated from every `missable: yes` overlay claim in the corpus -- the cross-cutting answer to "what am I about to lose if I leave this chamber?"
@@ -33,7 +33,8 @@ _source: 2026-11-06 https://theportalwiki.com/wiki/Obtaining_Portal_achievements
 
 ## Common-knowledge correction
 
-The widely repeated rule that *interrupting GLaDOS's camera voice lines breaks Camera Shy* is **false** -- the camera-detach counter and the voice-line counter are separate; only the detach counter feeds the achievement. _source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg · spoiler: none_
+The widely repeated rule that *interrupting GLaDOS's camera voice lines breaks Camera Shy* is **false** -- the camera-detach counter and the voice-line counter are separate; only the detach counter feeds the achievement.
+_source: deep-research handoff 2026-06-02 · capture: web_fetch · confidence: medium · enemy-tier: 0 · puzzle-tier: 0 · category: easter-egg · spoiler: none_
 
 ## Sources
 
